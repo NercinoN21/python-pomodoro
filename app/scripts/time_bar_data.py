@@ -49,5 +49,12 @@ def checking_data(initial_data: dict) -> bool:
     return True
 
 def turning_data_into_int(initial_data: dict) -> list[int]:
+    """Transforming dict values to list of int
 
+    Args:
+        initial_data (dict): Dict of user-entered data
+
+    Returns:
+        list[int]: Dict values ​​converted to int
+    """
     return [int(value) for value in initial_data.values()]
