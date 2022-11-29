@@ -27,3 +27,12 @@ class TimerData:
         return [self.study_time * 60,
                 self.break_time * 60,
                 self.long_break_time * 60]
+
+def checking_data(initial_data: dict) -> bool:
+
+    regex_number = "^[0-9]+$"
+    for value in initial_data.values():
+        if not re.search(regex_number, value) or value[0] == "0": 
+             return False
+
+    return True
