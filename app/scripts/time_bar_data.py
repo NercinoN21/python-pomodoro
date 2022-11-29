@@ -29,10 +29,21 @@ class TimerData:
                 self.long_break_time * 60]
 
 def checking_data(initial_data: dict) -> bool:
+    """Checking user input
 
+    Args:
+        initial_data (dict): A dictionary with time 
+                             entered by the user
+
+    Returns:
+        bool: Value verification result.
+              Checks if the user's input is a number,
+              does not start with 0 and is greater than zero.
+    """
+    
     regex_number = "^[0-9]+$"
     for value in initial_data.values():
-        if not re.search(regex_number, value) or value[0] == "0": 
+        if not re.search(regex_number, value) or value[0] == "0":
              return False
 
     return True
