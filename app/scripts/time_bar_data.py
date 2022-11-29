@@ -47,3 +47,7 @@ def checking_data(initial_data: dict) -> bool:
              return False
 
     return True
+
+def turning_data_into_int(initial_data: dict) -> list[int]:
+
+    return [int(value) for value in initial_data.values()]
