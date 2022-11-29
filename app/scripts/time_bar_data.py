@@ -4,3 +4,7 @@
 
     @author Nercino Neto
 '''
+
+# Native
+import re
+from dataclasses import dataclass
