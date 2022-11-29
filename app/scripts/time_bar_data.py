@@ -17,7 +17,13 @@ class TimerData:
     long_break_time: int
 
     def date_in_seconds(self) -> list[int] :
+        """Converts from minutes to seconds.
 
+        Returns:
+            list[int]: Returns the variables 
+            in "self" multiplied by 60
+        """
+        
         return [self.study_time * 60,
                 self.break_time * 60,
                 self.long_break_time * 60]
