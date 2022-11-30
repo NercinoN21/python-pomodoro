@@ -19,6 +19,19 @@ def error():
                         image=logo, 
                         title='ERROR')
 
+def sessions(amount_of_sessions: int):
+    """Display number of sessions
+
+    Args:
+        amount_of_sessions (int): Represents the number 
+                                  of sessions held
+    """
+
+    sg.popup_auto_close('Total number of sessions: '
+                      + f'{amount_of_sessions}', 
+                        image=logo, 
+                        title='Sessions')
+
 def end():
     """ Displaying end message """
 
