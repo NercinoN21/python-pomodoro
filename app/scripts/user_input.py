@@ -48,7 +48,7 @@ def setting_time() -> dict:
 
     # Checking if the user has submitted the values
     if submit != 'Submit':
-        return {-1: 'exit'}
+        values_time = {-1: 'exit'}
 
     window.close()
     
