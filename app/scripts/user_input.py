@@ -21,7 +21,7 @@ def setting_time() -> dict:
               and if he doesn't click on "Submit": 
               return {-1: 'exit'}
     """
-    
+
     layout = [
         [sg.Image(logo)],
         [sg.Text('Enter the time in minutes:')],
@@ -53,3 +53,32 @@ def setting_time() -> dict:
     window.close()
     
     return values_time
+
+def echoose_break_time(break_time: int, long_break_time: int) -> int:
+    layout = [
+        [sg.Image(logo)],
+        [sg.Text('Choose an option:')],
+        [
+            sg.Button('Break Time', key=1), 
+            sg.Text(f' {break_time} Minutes')
+        ],
+        [sg.Text('or')],
+        [
+            sg.Button('Long Break Time', key=2), 
+            sg.Text(f' {long_break_time} Minutes')
+        ]
+    ]
+
+    # Invoking window
+    window = sg.Window('Echoose Break Time', layout)
+
+    # Capturing output
+    option = window.read()[0]
+
+    # Checking if the user chose a valid key
+    if not option == 1 or option == 2:
+        option = -1
+
+    window.close()
+
+    return option
