@@ -18,3 +18,10 @@ def error():
                       + 'AND\nPOSITIVES GREATER THAN ZERO!',
                         image=logo, 
                         title='ERROR')
+
+def end():
+    """ Displaying end message """
+
+    sg.popup_auto_close("SEE YOU LATER!", 
+                        image=logo, 
+                        title='Bye')
