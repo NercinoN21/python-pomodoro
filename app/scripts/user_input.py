@@ -55,6 +55,18 @@ def setting_time() -> dict:
     return values_time
 
 def echoose_break_time(break_time: int, long_break_time: int) -> int:
+    """Choosing break
+
+    Args:
+        break_time (int): Minimum break time
+        long_break_time (int): Maximum break time
+
+    Returns:
+        int: Key of choice.
+             If click on the x, 
+             return -1
+    """
+
     layout = [
         [sg.Image(logo)],
         [sg.Text('Choose an option:')],
