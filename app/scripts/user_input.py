@@ -13,6 +13,15 @@ from main import *
 
 
 def setting_time() -> dict:
+    """Getting user data
+
+    Returns:
+        dict: Dictionary numbered from 1 to 3 with the 
+              values entered if the user clicks on "Submit", 
+              and if he doesn't click on "Submit": 
+              return {-1: 'exit'}
+    """
+    
     layout = [
         [sg.Image(logo)],
         [sg.Text('Enter the time in minutes:')],
