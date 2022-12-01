@@ -19,6 +19,14 @@ from main import logo, alarm
 
 
 def run_time_bar(max_seconds: int, title: str):
+    """General operation of the time bar
+
+    Args:
+        max_seconds (int): Execution time
+        title (str): Text that will be in 
+                     the header of the page
+    """
+    
     layout = [[sg.Image(logo)],
               [sg.Text('In progress...')],
               [sg.ProgressBar(max_value=max_seconds, orientation='h', 
