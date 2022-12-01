@@ -88,7 +88,7 @@ def echoose_break_time(break_time: int, long_break_time: int) -> int:
     option = window.read()[0]
 
     # Checking if the user chose a valid key
-    if not option == 1 or option == 2:
+    if option != 1 and option != 2:
         option = -1
 
     window.close()
