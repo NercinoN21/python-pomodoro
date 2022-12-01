@@ -11,7 +11,7 @@ from dataclasses import dataclass
 
 
 @dataclass
-class TimerData:
+class TimeData:
     study_time: int
     break_time: int
     long_break_time: int
