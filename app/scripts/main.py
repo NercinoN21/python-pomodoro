@@ -13,7 +13,3 @@ from pop_pups import *
 
 # To apply the theme
 from PySimpleGUI import theme
-
-# Setting to use in other scripts
-alarm = "app/media/alarm.mp3"
-logo = "app/media/logo.png"

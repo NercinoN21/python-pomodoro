@@ -9,7 +9,7 @@
 import PySimpleGUI as sg
 
 # Setting logo
-from main import *
+logo = "app/media/logo.png"
 
 
 def setting_time() -> dict:

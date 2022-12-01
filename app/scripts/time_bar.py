@@ -15,7 +15,8 @@ import PySimpleGUI as sg
 from playsound import playsound 
 
 # Setting logo and alarm
-from main import logo, alarm
+logo = "app/media/logo.png"
+alarm = "app/media/alarm.mp3"
 
 
 def run_time_bar(max_seconds: int, title: str):
@@ -26,7 +27,7 @@ def run_time_bar(max_seconds: int, title: str):
         title (str): Text that will be in 
                      the header of the page
     """
-    
+
     layout = [[sg.Image(logo)],
               [sg.Text('In progress...')],
               [sg.ProgressBar(max_value=max_seconds, orientation='h', 
