@@ -14,7 +14,12 @@ from time_bar_data import TimeData
 
 
 def pomodoro(data: TimeData):
+    """Responsible for operation after obtaining data
 
+    Args:
+        data (TimeData): User data already processed
+    """
+    
     # Setting time in seconds
     sec_study, sec_break, sec_long_break = data.date_in_seconds()
 
