@@ -5,9 +5,9 @@
 - Simple program for Pomodoro Technique:
 
 
-<img src='Image-readme/SettingTimer.PNG'> <img src='Image-readme/Studying.PNG'>
+<img src='image-readme/SettingTimer.PNG'> <img src='image-readme/Studying.PNG'>
 
-<img src='Image-readme/EchooseBreakTime.PNG'> <img src='Image-readme/BreakTime.PNG'> 
+<img src='image-readme/EchooseBreakTime.PNG'> <img src='image-readme/BreakTime.PNG'> 
 
 ## 🔧 Technologies and Frameworks:
 - python;
