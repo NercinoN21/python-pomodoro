@@ -12,7 +12,6 @@
 ## 🔧 Technologies and Frameworks:
 - python;
 - PySimpleGUI;
-- threading;
 - playsound;
 
 ## 🚀 Running the Project:
