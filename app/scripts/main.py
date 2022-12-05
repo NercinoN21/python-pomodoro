@@ -9,7 +9,7 @@
 from user_input import setting_time
 from time_bar_data import *
 from pomodoro import pomodoro
-from pop_pups import *
+from pop_ups import *
 
 # To apply the theme
 from PySimpleGUI import theme

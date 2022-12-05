@@ -1,5 +1,5 @@
 '''
-    Testing functions of "pop_pups.py"
+    Testing functions of "pop_ups.py"
 
     @author Nercino Neto
 '''
@@ -17,7 +17,7 @@ from colorama import Fore
 sys.path.insert(0,os.path.abspath(
                     os.path.join(
                         os.path.dirname(__file__), '..')))
-import scripts.pop_pups as pp
+import scripts.pop_ups as pu
 
 # For the tests(Native)
 import unittest
