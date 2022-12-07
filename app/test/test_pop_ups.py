@@ -9,15 +9,11 @@
 import sys
 import os
 
-import colorama
-colorama.init()
-from colorama import Fore
-
 # Getting the scripts module
 sys.path.insert(0,os.path.abspath(
                     os.path.join(
                         os.path.dirname(__file__), '..')))
-import scripts.pop_ups as pu
+import scripts.pop_ups as pop
 
 # For the tests(Native)
 import unittest
@@ -25,3 +21,36 @@ import unittest
 # pip install pysimplegui
 # To set the theme
 from PySimpleGUI import theme
+
+
+class TestPopUps(unittest.TestCase): 
+    """Test Class for Pop Ups
+
+    Args:
+        unittest (_type_): Test engine
+    """
+
+    # Set the theme
+    theme('Black') 
+
+    # Value for sessions
+    value = 21 
+
+    def test_error(self): 
+        """Checking error() functionality"""
+
+        self.assertIsNone(pop.error())
+
+    def test_end(self): 
+        """Checking end() functionality"""
+
+        self.assertIsNone(pop.end())
+
+    def test_sessions(self): 
+        """Checking sessions() functionality"""
+
+        self.assertIsNone(pop.sessions(self.value))
+
+
+if __name__ == '__main__': 
+    unittest.main()
