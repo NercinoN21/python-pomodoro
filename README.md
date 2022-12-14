@@ -10,24 +10,50 @@
 <img src='image-readme/EchooseBreakTime.PNG'> <img src='image-readme/BreakTime.PNG'> 
 
 ## 🔧 Technologies and Frameworks:
-- python;
+- Python;
 - PySimpleGUI;
-- playsound;
+- PyAutoGUI
+- Playsound;
 
 ## 🚀 Running the Project:
-Do the following:
+
+- ### Clone the repository:
 ```
 git clone https://github.com/NercinoN21/python-pomodoro
 ```
+
+- ### Enter the repository:
 ```
 cd python-pomodoro
 ```
+
+- ### Check the requirements:
 ```
 pip install -r requirements.txt
 ```
+
+- ### Run the APP:
 ```
 python app/scripts/main.py
 ```
 
-## 🎯 Project Status:
-- Preparing tests
+## ✅ Tests:
+
+- ### Enter the repository:
+```
+cd python-pomodoro
+```
+
+- ### Run the commands:
+```
+python -m unittest -v app/test/test_pop_ups.py
+```
+```
+python -m unittest -v app/test/test_setting_time.py
+```
+```
+python -m unittest -v app/test/test_time_bar_data.py
+```
+```
+python -m unittest -v app/test/test_time_bar.py
+```
