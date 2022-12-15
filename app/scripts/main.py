@@ -16,7 +16,12 @@ from PySimpleGUI import theme
 
 
 def main():
+    """
+       Function that applies to
+       complete pomodoro operation
+    """
 
+    # Set the theme
     theme('Black')
 
     # Defining data
@@ -33,7 +38,7 @@ def main():
         # Invoking pomodoro
         pomodoro(final_datebase)
     elif datebase == {-1: 'exit'}:
-        ''' Just leave '''
+        # Just leave 
         pass
     else:
         # Orienting and redirecting
