@@ -52,6 +52,9 @@ python -m unittest -v app/test/test_pop_ups.py
 python -m unittest -v app/test/test_setting_time.py
 ```
 ```
+python -m unittest -v app/test/test_echoose.py 
+```
+```
 python -m unittest -v app/test/test_time_bar_data.py
 ```
 ```
