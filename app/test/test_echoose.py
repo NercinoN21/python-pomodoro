@@ -1,6 +1,6 @@
 '''
-    Testing the "setting_time" function of the 
-    "user_input.py" program
+    Testing the "echoose_break_time" function of 
+    the "user_input.py" program
 
     @author Nercino Neto
 '''
@@ -26,38 +26,33 @@ import pyautogui as pag
 
 
 def typing():
-    """Typing values and confirming"""
+    """Typing value and confirming"""
 
     sleep(2)
-    pag.write('50')
     pag.press('tab')
-
-    pag.write('10')
     pag.press('tab')
-
-    pag.write('15')
-    pag.press('enter')
+    pag.press('space')
 
 
-def calling_setting_time():
+def calling_echoose_break_time():
     """Calling function and making assert"""
 
-    # Getting values
-    return_values = ui.setting_time()
+    # Getting value
+    return_value = ui.echoose_break_time(10, 20)
 
-    # Values ​​to compare
-    example_values = {1: '50', 2: '10', 3: '15'}
+    # Value ​​to compare
+    example_value = 2
 
     # Executing assert
     try:
-        assert return_values == example_values
+        assert return_value == example_value
     except AssertionError:
         print(f'''
->       assert return_values == example_values
-E       assert {return_values} != {example_values}
-E        +  where return_values = ui.setting_time()
+>       assert return_value == example_value
+E       assert {return_value} != {example_value}
+E        +  where return_value = ui.echoose_break_time(10, 20)
 
-    AssertionError in test_setting_time.py''')
+    AssertionError in test_echoose.py''')
 
 
 def creating_process(number: int):
@@ -66,11 +61,11 @@ def creating_process(number: int):
     if number == 1:
         typing()
     else:
-        calling_setting_time()
+        calling_echoose_break_time()
 
 
-class TestSettingTime(unittest.TestCase):
-    """Testing setting_time
+class TestEchooseBreakTime(unittest.TestCase):
+    """Testing echoose_break_time
 
     Args:
         unittest (_type_): Test engine

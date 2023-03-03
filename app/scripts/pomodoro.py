@@ -37,7 +37,7 @@ def pomodoro(data: TimeData):
                 run_time_bar(sec_break, title='Break Time...')
             case 2:
                 run_time_bar(sec_long_break, title='Long Break Time...')
-            case -1:
+            case _:
                 break
         
         # Showing total sessions
