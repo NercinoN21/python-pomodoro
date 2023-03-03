@@ -9,11 +9,8 @@
 import sys
 import os
 
-# Getting the scripts module
-sys.path.insert(0,os.path.abspath(
-                    os.path.join(
-                        os.path.dirname(__file__), '..')))
-import scripts.time_bar as tb
+# Getting the time bar
+import app.scripts.time_bar as tb
 
 # For the tests(Native)
 import unittest

@@ -6,15 +6,8 @@
 '''
 
 
-# Native
-import sys
-import os
-
-# Getting the scripts module
-sys.path.insert(0,os.path.abspath(
-                    os.path.join(
-                        os.path.dirname(__file__), '..')))
-from scripts import user_input as ui
+# Getting the user input
+import app.scripts.user_input as ui
 
 # For the tests(Native)
 import unittest

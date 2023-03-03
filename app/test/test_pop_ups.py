@@ -5,15 +5,8 @@
 '''
 
 
-# Native
-import sys
-import os
-
-# Getting the scripts module
-sys.path.insert(0,os.path.abspath(
-                    os.path.join(
-                        os.path.dirname(__file__), '..')))
-import scripts.pop_ups as pop
+# Getting the pop ups
+import app.scripts.pop_ups as pop
 
 # For the tests(Native)
 import unittest

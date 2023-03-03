@@ -5,15 +5,8 @@
 '''
 
 
-# Native
-import sys
-import os
-
-# Getting the scripts module
-sys.path.insert(0,os.path.abspath(
-                    os.path.join(
-                        os.path.dirname(__file__), '..')))
-import scripts.time_bar_data as tbd
+# Getting the time bar data
+import app.scripts.time_bar_data as tbd
 
 # For the tests(Native)
 import unittest
