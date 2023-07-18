@@ -7,9 +7,9 @@
 
 
 from user_input import setting_time
-from time_bar_data import *
+import time_bar_data as tbd
 from pomodoro import pomodoro
-from pop_ups import *
+from pop_ups import error
 from PySimpleGUI import theme
 
 
@@ -22,10 +22,10 @@ def main() -> None:
     theme("Black")
     datebase = setting_time()
 
-    if checking_data(datebase):
-        int_datebase = turning_data_into_int(datebase)
+    if tbd.checking_data(datebase):
+        int_datebase = tbd.turning_data_into_int(datebase)
 
-        final_datebase = TimeData(
+        final_datebase = tbd.TimeData(
             int_datebase[0],
             int_datebase[1],
             int_datebase[2]

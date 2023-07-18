@@ -6,9 +6,9 @@
 """
 
 
-from user_input import *
-from pop_ups import *
-from time_bar import *
+from user_input import echoose_break_time
+from pop_ups import sessions, end
+from time_bar import run_time_bar
 from time_bar_data import TimeData
 
 
